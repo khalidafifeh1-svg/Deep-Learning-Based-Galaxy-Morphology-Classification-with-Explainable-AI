@@ -1,0 +1,269 @@
+/* Center-align text inside main page */
+.Main_page-page {
+  text-align: center;
+}
+
+/* Style for the main header section */
+.Main_page-header {
+
+  /* Gradient background with multiple colors */
+  background: linear-gradient(
+    135deg,
+    #1d1b48,
+    #473373,
+    #794b7a,
+    #9d6697,
+    #d39eb9
+  );
+
+  /* Make it take full screen height */
+  min-height: 100vh;
+
+  /* Use flexbox layout */
+  display: flex;
+
+  /* Stack items vertically */
+  flex-direction: column;
+
+  /* Center items horizontally */
+  align-items: center;
+
+  /* Center items vertically */
+  justify-content: center;
+
+  /* Responsive font size */
+  font-size: calc(10px + 2vmin);
+
+  /* Text color */
+  color: white;
+
+  /* Space inside the container */
+  padding: 20px;
+}
+
+/* Card that holds upload UI */
+.upload-card {
+  margin-top: 30px; /* space above */
+  padding: 25px;    /* space inside */
+  width: 90%;       /* responsive width */
+  max-width: 700px; /* limit max width */
+
+  /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.12);
+
+  /* Rounded corners */
+  border-radius: 20px;
+
+  /* Blur effect behind card (glass effect) */
+  backdrop-filter: blur(8px);
+
+  /* Shadow for depth */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Hide default file input */
+.file-input {
+  display: none;
+}
+
+/* Drag-and-drop upload area */
+.drop-zone {
+  border: 2px dashed rgba(255, 255, 255, 0.5); /* dashed border */
+  border-radius: 18px; /* rounded edges */
+  padding: 30px 20px;
+  cursor: pointer; /* pointer cursor on hover */
+  transition: 0.3s ease; /* smooth animation */
+
+  min-height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* light background */
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* When user hovers over drop zone */
+.drop-zone:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* When user is dragging file over it */
+.drag-active {
+  border-color: white; /* highlight border */
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.01); /* slightly bigger */
+}
+
+/* Title inside drop zone */
+.drop-zone-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+/* Text inside drop zone */
+.drop-zone-content p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9; /* slightly faded */
+}
+
+/* Container for preview image */
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Preview image style */
+.preview-image {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 12px;
+
+  /* shadow around image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* File name text */
+.file-name {
+  margin-top: 12px;
+  font-size: 0.95rem;
+
+  /* break long file names */
+  word-break: break-word;
+}
+
+/* Buttons container */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* space between buttons */
+  flex-wrap: wrap; /* wrap on small screens */
+  margin-top: 20px;
+}
+
+/* All buttons inside upload card */
+.upload-card button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Disabled button style */
+.upload-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Clear button (red) */
+.clear-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* Hover effect for clear button */
+.clear-btn:hover:enabled {
+  background-color: #e60000;
+}
+
+/* Wrapper for progress bar */
+.progress-wrapper {
+  margin-top: 22px;
+  text-align: left;
+}
+
+/* Label above progress bar */
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Background of progress bar */
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px; /* pill shape */
+  overflow: hidden;
+}
+
+/* Filled part of progress bar */
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: white;
+  transition: width 0.3s ease; /* smooth animation */
+}
+
+/* Result display box */
+.result-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+}
+
+/* Main prediction text */
+.main-prediction {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Container for probability list */
+.probabilities-box {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Heading inside probability box */
+.probabilities-box h3 {
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* Each probability row */
+.probability-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+
+  /* light background */
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Class name and value text */
+.probability-name,
+.probability-value {
+  font-size: 1rem;
+}
+
+/* Grad-CAM section */
+.gradcam-box {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* Title inside Grad-CAM section */
+.gradcam-box h3 {
+  margin-bottom: 14px;
+}
+
+/* Grad-CAM image style */
+.gradcam-image {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 14px;
+
+  /* shadow for depth */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}

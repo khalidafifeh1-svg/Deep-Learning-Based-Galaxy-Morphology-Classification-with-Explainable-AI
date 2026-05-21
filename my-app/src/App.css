@@ -1,0 +1,40 @@
+/* Style for main App container */
+.App {
+  text-align: center; /* Center all text inside this container */
+}
+
+
+/* Style for header section */
+.App-header {
+
+  /* Create a gradient background with multiple colors */
+  background: linear-gradient(
+    135deg,   /* direction of gradient */
+    #1D1B48,  /* dark blue */
+    #473373,  /* purple */
+    #794B7A,  /* lighter purple */
+    #9D6697,  /* pinkish purple */
+    #D39EB9   /* light pink */
+  ); 
+
+  /* Make header take full screen height */
+  min-height: 100vh;
+
+  /* Use flexbox layout */
+  display: flex;
+
+  /* Arrange items vertically */
+  flex-direction: column;
+
+  /* Center items horizontally */
+  align-items: center;
+
+  /* Center items vertically */
+  justify-content: center;
+
+  /*  font size  */
+  font-size: calc(10px + 2vmin);
+
+  /* Set text color to white */
+  color: rgb(255, 255, 255);
+}
