@@ -7,7 +7,7 @@ This project is a deep learning system that classifies galaxy images into morpho
 - Galaxy image classification using CNN (EfficientNet-B3)
 - Transfer learning with ImageNet weights
 - Explainable AI using Grad-CAM heatmaps
-- Web application (React + Flask)
+- application (React + Flask)
 - Secure authentication using Firebase
 
 ## Dataset
