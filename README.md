@@ -27,8 +27,19 @@ This project is a deep learning system that classifies galaxy images into morpho
 - Balanced performance across 3 classes
 - Best performance: Elliptical galaxies
 
+<img width="833" height="393" alt="4c9a2062-9bf6-477a-b47a-34be50e090e1" src="https://github.com/user-attachments/assets/e3011561-3209-4eeb-94f7-73d73af132f7" />
+
+<img width="842" height="393" alt="d8cf8dbe-010d-4ccb-9ab3-a25e91e06529" src="https://github.com/user-attachments/assets/7d64fdfa-6ce8-4756-b695-d3fae3ab27f3" />
+
 ## Explainable AI
 Grad-CAM is used to highlight image regions influencing predictions, improving transparency and trust in model decisions.
+
+<img width="481" height="504" alt="d848a237-3f13-4de3-9190-2eb7f5878622" src="https://github.com/user-attachments/assets/d7027ce2-378f-481f-87a7-1c1cfc08c2e3" />
+
+<img width="481" height="504" alt="e4a012bf-b263-47e0-ad49-9418b86cbcff" src="https://github.com/user-attachments/assets/4401a2d8-4e4e-4ebf-88af-55413bf08f9d" />
+
+<img width="481" height="504" alt="2db93f3c-3034-4788-a374-e8e6613d577d" src="https://github.com/user-attachments/assets/e93477a5-05b4-49d7-b79e-c89e89b10108" />
+
 
 ## System Architecture
 Image Upload → Preprocessing → EfficientNet-B3 → Prediction → Grad-CAM → UI Display
